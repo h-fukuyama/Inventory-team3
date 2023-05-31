@@ -21,6 +21,7 @@ function login_checker(){
     }
 }
 
+#sqlを実行するために使えそうな関数を作ってみたけど結局使ってない
 function execute_sql($dbh, $sql, $data,){
     $sql_message = $sql;
     $stmt = $dbh->prepare($sql_message);

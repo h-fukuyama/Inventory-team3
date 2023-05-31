@@ -13,6 +13,7 @@ function db_connect(){
     }
 }
 
+#ログインしているかを判定する関数。してなければログインページに遷移
 function login_checker(){
     if (!isset($_SESSION["user_name"])) {
         header("Location: ../login/login.php");
